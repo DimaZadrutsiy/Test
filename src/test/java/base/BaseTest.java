@@ -47,16 +47,16 @@ public abstract class BaseTest {
         return webDriverWait;
     }
 
-    public HomePage openBaseURL() {
+    public GooglePage openBaseURL() {
         TestUtils.loadBaseUrlPage(getDriver(), getWait());
 
-        return new HomePage(getDriver());
+        return new GooglePage(getDriver());
     }
 
     //новые методы getPages
 
-    public HomePage getHomePage() {
+    public GooglePage getHomePage() {
 
-        return new HomePage(getDriver());
+        return new GooglePage(getDriver());
     }
 }

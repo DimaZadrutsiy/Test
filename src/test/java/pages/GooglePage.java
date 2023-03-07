@@ -6,12 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-public class HomePage extends BasePage {
+public class GooglePage extends BasePage {
 
     @FindBy(xpath = "//input[@aria-autocomplete]")
     private WebElement element;
 
-    public HomePage(WebDriver driver) {
+    public GooglePage(WebDriver driver) {
         super(driver);
     }
 
